@@ -13,5 +13,13 @@ print("Hola Mundo :)")
 print("Podemos", "escribir", "varios parámetros", "después de la coma")
 
 print("Modificaremos el final de esta impresión","A menos que tenga un separador en el string", sep="---")
-print("Funciona en un string",end=" -> ")
+#En lugar de un espacio, colocará tres guiones
+print("Funciona en un string",end=" -> ")#En lugar de un salto de línea va a colocar una flecha
 print("Este es un test para el salto")
+
+nombre = "josve"
+edad = 28#sera un int
+fecha_de_nacimiento = "2000-01-28"#sera un string
+
+print(type(fecha_de_nacimiento))
+print(type(edad))
