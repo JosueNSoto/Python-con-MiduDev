@@ -28,4 +28,3 @@ mi_nombre="josve"
 mi_nombre_de_mi_variable="ñangos"
 
 MI_CONSTANTE = 3.1416#Las constantes se declaran en mayúsculas
-
