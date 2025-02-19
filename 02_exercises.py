@@ -15,8 +15,7 @@ if num1 != num2:
         print(f"el número {num1}, es mayor que {num2}")
     else:
         print(f"el número {num2}, es mayor que {num1}")
-else:
-    print("Los números son iguales")"""
+else: print("Los números son iguales")"""
 
 # Ejercicio 2: Calculadora simple
 # Pide al usuario dos números y una operación (+, -, *, /)
@@ -41,6 +40,7 @@ else:print("Operación no reconocida")"""
 # Ejercicio 3: Año bisiesto
 # Pide al usuario que introduzca un año y determina si es bisiesto.
 # Un año es bisiesto si es divisible por 4, excepto si es divisible por 100 pero no por 400.
+print("Ejercicio 3 ----------------------------")
 """año = input("Ingresa un año: ")
 año = int(año)
 print(f"El año es: {año}")
@@ -49,6 +49,13 @@ if año%100==0 and año%400!=0:
 elif (año%4==0 and año%100!=0) or año%400==0:
     print("El año es bisiesto")
 else: print("El año NO es bisiesto")"""
+
+anio = int(input("Introduce un año: "))
+
+if (anio % 4 == 0 and anio % 100 != 0) or anio % 400 == 0:
+    print(f"{anio} es un año bisiesto.")
+else:
+    print(f"{anio} no es un año bisiesto.")
         
 
 # Ejercicio 4: Categorizar edades
@@ -58,6 +65,7 @@ else: print("El año NO es bisiesto")"""
 # - Adolescente (13-17 años)
 # - Adulto (18-64 años)
 # - Adulto mayor (65 años o más)
+print("Ejercicio 4 ----------------------------")
 age = input("Ingresa una edad: ")
 age = int(age)
 print(f"La edad es de : {age}, usted es: ",end="")
