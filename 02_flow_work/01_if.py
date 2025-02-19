@@ -30,6 +30,24 @@ else:#Else no es obligatorio, en caso de no cumplir ninguna condición else se e
 #Ejemplo 4 
 ### Operadores lógicos
 #and, or, not
+
+"""
+AND
+TRUE + TRUE = TRUE
+TRUE + FALSE = FALSE
+FALSE + TRUE = FALSE
+FALSE + FALSE = FALSE
+
+OR
+TRUE + TRUE = TRUE
+TRUE + FALSE = TRUE
+FALSE + TRUE = TRUE
+FALSE + FALSE = FALSE
+
+NOT
+TRUE = FALSE
+FALSE = TRUE
+"""
 edad = 15
 carnet = False
 
@@ -48,6 +66,14 @@ else:
     
 #Ejemplo 6
 es_fin_de_semana = False#Acá sabemos que NO es fin de semana
-if not es_fin_de_semana:#Nos preguntamos si NO es fin de semana, tenemos que trabajar
+if not es_fin_de_semana:#Nos preguntamos si NO es fin de semana, lo que hace el not, es cambiar el valor de es_fin_de_semana
     print("Tenemos que chambear :(")
     print(es_fin_de_semana)
+    
+#Ejemplo 7
+#Condición ternaria
+#[Código si cumple la condición if] if [condición] else [Código si no cumple
+u_love_job = True
+print("Sigue trabajando feliz") if u_love_job == True else print("Renuncia al trabajando")
+#La primera parte es lo que haría si se cumple la condición, después la evaluación de la condición, y por último lo que haría si no se cumple la condición
+#Esto se hace para "simular" que es un dialogo, ya que se lee de izquierda a derecha
