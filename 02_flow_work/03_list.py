@@ -58,3 +58,9 @@ print("\nObteniendo solo los últimos 5 elementos")
 print(listaSlicing1[3:])#A partir del índice 5, que es "Sony", nos devuelve todos los elementos hasta el final de la lista
 print("\nGenerando una copia de la lista")
 print("\nCopia de la lista original: ",listaSlicing1[:])#Funciona como un clon de la lista original, si modificamos la copia, no afectará a la lista original
+
+print("\nJugando con los pasos de una Lista:")
+lista_Slicing_2=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+print(lista_Slicing_2[::-1])#Invierte la lista, el primer ':' indica que queremos todos los elementos, el segundo ':' indica que queremos todos los elementos, pero en orden inverso
+print(lista_Slicing_2[::2])#Obtiene todos los elementos, pero de 2 en 2
+print(lista_Slicing_2[1::2])#Iniciamos en el índice 1 y obtenemos los índices pares
