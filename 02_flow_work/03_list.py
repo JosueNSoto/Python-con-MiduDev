@@ -40,3 +40,21 @@ Para ingresar primero accede a la fila: siendo 0 la primera fila, 1 la segunda f
 Luego accede a la columna: siendo 0 la primera columna, 1 la segunda columna, 2 la tercera columna...
 Para acceder al 9 de la matriz, sería: matrix[2][2]
 """
+
+print("Hablaremos del slicing: ")#Rebanado de una lista, con esto podemos obtener una parte de la lista
+listaSlicing1=["Apple", "samsung", "Huawei", "Xiaomi", "Motorola", "Sony", "LG", "Nokia"]
+print(f"Lista original: ", listaSlicing1)
+#Sintaxis: lista[inicio:fin:pasos]
+#inicio: Le estamos diciendo desde que indice queremos iniciar, en este caso, el índice 1
+#fin: Hasta que índice queremos llegar, en este caso, el índice 5. Sin embargo, este no lo cuenta, no nos lo devuelve, solamente nos devuelve hasta el índice anterior
+#pasos: De cuanto en cuanto queremos que nos devuelva los elementos, en este caso, no se especifica, por lo que se toma el valor por defecto, que es 1
+print("\nObteniendo del índice 1 al 5")
+print(listaSlicing1[1:5])#['samsung', 'Huawei', 'Xiaomi', 'Motorola']
+print("\nObteniendo solo los primeros 3 elementos")
+print(listaSlicing1[:3])#['Apple', 'samsung', 'Huawei']
+print("\nObteniendo solo los últimos 3 elementos")
+print(listaSlicing1[-3:])#["Sony", "LG", "Nokia"], En este caso comentamos el -3, porque es el inicio de lo que nos va a traer, y no el final. Si quisieramos obtener todos los elementos, MENOS los últimos 3, sería algo como: print(listaSlicing1[:-3])
+print("\nObteniendo solo los últimos 5 elementos")
+print(listaSlicing1[3:])#A partir del índice 5, que es "Sony", nos devuelve todos los elementos hasta el final de la lista
+print("\nGenerando una copia de la lista")
+print("\nCopia de la lista original: ",listaSlicing1[:])#Funciona como un clon de la lista original, si modificamos la copia, no afectará a la lista original
