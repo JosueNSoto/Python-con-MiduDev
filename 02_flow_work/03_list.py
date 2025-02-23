@@ -78,9 +78,12 @@ lista_agregada=[1,2,3,4,5]
 print("\nNuestra lista original: ",lista_agregada,end='->'". Queriendo llegar al 10")
 #Primer método, forma larga y menos eficiente
 print("\n\nPrimer método: concatenar listas")
-lista_agregada = lista_agregada + [6,7,8,9,10]
+lista_agregada = lista_agregada + [6,7,8,9,10]#crea una nueva lista, le asigna el valor, y luego la asigna a la lista original. Esto no es eficiente.
 print(f"Nuestra lista final es: ",lista_agregada)
 #Segundo método, corta y eficiente
-print("\nSegundo método: ")
-lista_agregada += [6,7,8,9,10,11,12,13,14,15]
+print("\nSegundo método: concatenar listas")
+lista_agregada += [6,7,8,9,10,11,12,13,14,15]#Este método es más eficiente, ya que no crea una nueva lista, sino que modifica la lista original
 print(f"Nuestra lista final es: ",lista_agregada)
+
+#Recuperar la longitud de una lista
+print("La longitud de la lista es: ",len(lista_agregada))
