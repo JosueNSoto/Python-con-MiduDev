@@ -64,3 +64,23 @@ lista_Slicing_2=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
 print(lista_Slicing_2[::-1])#Invierte la lista, el primer ':' indica que queremos todos los elementos, el segundo ':' indica que queremos todos los elementos, pero en orden inverso
 print(lista_Slicing_2[::2])#Obtiene todos los elementos, pero de 2 en 2
 print(lista_Slicing_2[1::2])#Iniciamos en el índice 1 y obtenemos los índices pares
+
+#Modificando elementos de una lista
+print("\nModificando elementos de una lista")
+lista_modificar=[1,2,3,4,5]
+print(lista_modificar)
+lista_modificar[0]=20
+#La sintaxis es: lista[indice]=nuevo_valor
+print("El valor de la lista con el nuevo valor es: ",lista_modificar)
+
+#Añadir elementos en una lista
+lista_agregada=[1,2,3,4,5]
+print("\nNuestra lista original: ",lista_agregada,end='->'". Queriendo llegar al 10")
+#Primer método, forma larga y menos eficiente
+print("\n\nPrimer método: concatenar listas")
+lista_agregada = lista_agregada + [6,7,8,9,10]
+print(f"Nuestra lista final es: ",lista_agregada)
+#Segundo método, corta y eficiente
+print("\nSegundo método: ")
+lista_agregada += [6,7,8,9,10,11,12,13,14,15]
+print(f"Nuestra lista final es: ",lista_agregada)
