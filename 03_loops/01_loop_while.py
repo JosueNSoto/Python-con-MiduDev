@@ -3,7 +3,8 @@
 #While: mientras se cumpla la condición, se ejecuta el bucle
 #En algunos casos, primero se evalúa la condición y luego se ejecuta el bucle, también se puede ejecutar el código y al final se evalúia la condición para ver si se ejecuta nuevamente el bucle
 #En el caso de que la condición no se cumpla, el bucle se detiene
-
+import os
+os.system("cls")
 #Sintaxis
 #while condición:
 #    código a ejecutar si se cumple la condición
@@ -56,3 +57,10 @@ while contador <= 100: #Bucle infinito
 print("----------------------")
 
 print("Vamos a usar el 'else'")
+contador = 0
+while contador <=5:
+    print(contador)
+    contador += 1
+    #break # Podemos ocupar break, sin embargo, si la condición se cumple, el bucle se detiene y no llegaríamos al else
+else:#El else va a ejecutar el código cuando la condición del while no se cumpla
+    print("Fin del bucle")#El else sirve para confirmar que el bucle se ha detenido y se ha cumplido la condición
